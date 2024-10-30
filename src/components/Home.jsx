@@ -1,15 +1,13 @@
-import Filter from "./Filter";
-// import Footer from "./Footer";
-// import NavbarNew from "./NavbarNew";
-// import ProductList from "./ProductList";
+import Footer from "./Footer";
+import NavbarNew from "./NavbarNew";
+import ProductList from "./ProductList";
 
 const Home = () => {
   return (
     <div>
-      {/* <NavbarNew />
+      <NavbarNew />
       <ProductList />
-      <Footer /> */}
-      <Filter />
+      <Footer />
     </div>
   );
 };

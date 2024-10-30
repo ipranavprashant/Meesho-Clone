@@ -15,7 +15,7 @@ const NavbarNew = () => {
           />
           <div className="hidden ml-8 lg:block">
             <svg
-              className="absolute left-1 top-5 transform -translate-y-1/2 h-4 w-6"
+              className="absolute left-52 top-11 transform -translate-y-1/2 h-4 w-6"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -35,7 +35,7 @@ const NavbarNew = () => {
               </defs>
             </svg>
             <input
-              className="w-56 h-11 md:w-100 rounded-md border border-slate-700 placeholder:text-xs pl-7 md:placeholder:text-sm"
+              className="w-56 h-11 ml-2 md:w-100 rounded-md border border-slate-700 placeholder:text-xs pl-7 md:placeholder:text-sm"
               name="search-box"
               type="text"
               placeholder="Try Saree, Kurti or Search by Product Id, etc."

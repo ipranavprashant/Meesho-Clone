@@ -62,7 +62,7 @@
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center text-center bg-purple-50 w-full mt-2 py-10 px-5 md:px-16 lg:h-64 lg:flex-row lg:text-left lg:justify-between">
+    <div className="flex flex-col items-center text-center bg-purple-50 w-full mt-2 py-10 px-5 md:px-16 lg:h-auto lg:flex-row lg:text-left lg:justify-between">
       {/* Section 1: Brand and Apps */}
       <div className="mb-8 lg:mb-0">
         <p className="text-2xl lg:text-4xl">Shop Non-Stop on Meesho</p>
