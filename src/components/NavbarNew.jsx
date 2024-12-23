@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import SubCategoriesNavbar from "./SubCategoriesNavbar";
 
 const NavbarNew = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -106,15 +107,64 @@ const NavbarNew = () => {
         <>
           <div className="h-0.25 mt-4 bg-slate-400"></div>
           <div className="flex justify-evenly mt-4">
-            <div className="cursor-pointer">Women Ethnic</div>
-            <div className="cursor-pointer">Women Western</div>
-            <div className="cursor-pointer">Men</div>
-            <div className="cursor-pointer">Kids</div>
-            <div className="cursor-pointer">Home & Kitchen</div>
-            <div className="cursor-pointer">Beauty & Health</div>
-            <div className="cursor-pointer">Jewellery & Accessories</div>
-            <div className="cursor-pointer">Bags & Footwear</div>
-            <div className="cursor-pointer">Electronics</div>
+            <div className="relative group cursor-pointer">
+              Women Ethnic
+              <div className="absolute w-auto opacity-0 -z-50 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:z-50 mt-6">
+                <SubCategoriesNavbar />
+              </div>
+            </div>
+
+            <div className="relative group cursor-pointer">
+              Women Western
+              <div className="absolute w-auto opacity-0 -z-50 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:z-50 mt-6">
+                <SubCategoriesNavbar />
+              </div>
+            </div>
+
+            <div className="relative group cursor-pointer">
+              Men
+              <div className="absolute w-auto opacity-0 -z-50 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:z-50 mt-6">
+                <SubCategoriesNavbar />
+              </div>
+            </div>
+
+            <div className="relative group cursor-pointer">
+              Kids
+              <div className="absolute w-auto opacity-0 -z-50 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:z-50 mt-6">
+                <SubCategoriesNavbar />
+              </div>
+            </div>
+
+            <div className="relative group cursor-pointer">
+              Home & Kitchen
+              <div className="absolute w-auto opacity-0 -z-50 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:z-50 mt-6">
+                <SubCategoriesNavbar />
+              </div>
+            </div>
+            <div className="relative group cursor-pointer">
+              Beauty & Health
+              <div className="absolute w-auto opacity-0 -z-50 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:z-50 mt-6 right-0">
+                <SubCategoriesNavbar />
+              </div>
+            </div>
+            <div className="relative group cursor-pointer">
+              Jewellery & Accessories
+              <div className="absolute w-auto opacity-0 -z-50 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:z-50 mt-6 right-0">
+                <SubCategoriesNavbar />
+              </div>
+            </div>
+            <div className="relative group cursor-pointer">
+              Bags & Footwear
+              <div className="absolute w-auto opacity-0 -z-50 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:z-50 mt-6 right-0">
+                <SubCategoriesNavbar />
+              </div>
+            </div>
+            <div className="relative group cursor-pointer">
+              Electronics
+              <div className="absolute w-auto opacity-0 -z-50 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:z-50 mt-6 right-0">
+                <SubCategoriesNavbar />
+              </div>
+            </div>
           </div>
           <div className="h-0.25 mt-4 bg-slate-400"></div>
         </>
@@ -123,7 +173,13 @@ const NavbarNew = () => {
       {/* Dropdown menu for mobile */}
       {isMenuOpen && (
         <div className="lg:hidden mt-4 space-y-2 text-center">
-          <div className="cursor-pointer">Women Ethnic</div>
+          <div className="cursor-pointer">
+            Women Ethnic
+            <div className="absolute w-72 -mt-5 opacity-0 -z-50 hover:z-50 hover:opacity-5 hover:mt-0">
+              <div>item1</div>
+              <div>item1</div>
+            </div>
+          </div>
           <div className="cursor-pointer">Women Western</div>
           <div className="cursor-pointer">Men</div>
           <div className="cursor-pointer">Kids</div>
