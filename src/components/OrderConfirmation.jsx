@@ -1,12 +1,18 @@
 import { useNavigate } from "react-router-dom";
+import useScrollToTop from "../hooks/useScrollToTop";
 const OrderConfirmation = () => {
   const navigate = useNavigate();
+  useScrollToTop();
+
   return (
     <>
       <div className="flex flex-col justify-center items-center md:flex-row md:justify-around p-8 ">
         <img
           src="https://www.meesho.com/assets/svgicons/meeshoLogo.svg"
           className="w-28 h-10 md:w-36 cursor-pointer"
+          onClick={() => {
+            navigate("/");
+          }}
         />
         <div className="w-72 flex">
           <div>

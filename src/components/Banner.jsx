@@ -51,15 +51,15 @@ const Banner = () => {
                   </div>
                 </div>
                 <button
-                  className="border w-72 h-12 bg-pink-700 text-white font-bold rounded-md flex items-center justify-center space-x-2"
+                  className="border w-72 h-12 bg-[#9F2089] text-white font-bold rounded-md flex items-center justify-center space-x-2"
                   onClick={() => {
-                    window.location.href = "https://meesho.com"; // Fixed the navigation issue
+                    window.location.href = "https://meesho.com";
                   }}
                 >
                   <img
-                    src="https://images.meesho.com/images/marketing/1721995049215.png" // Replace with the actual path to your logo
+                    src="https://images.meesho.com/images/marketing/1721995049215.png"
                     alt="Logo"
-                    className="w-6 h-6" // Adjust size as needed
+                    className="w-6 h-6"
                   />
                   <span>Download the Meesho App</span>
                 </button>

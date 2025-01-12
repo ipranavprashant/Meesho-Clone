@@ -7,19 +7,6 @@ const FetchFeed = () => {
   const [feedData, setFeedData] = useState({});
 
   const fetchFeedAPI = async () => {
-    // try {
-    //   const response = await axios.get(
-    //     "https://www.swiggy.com/mapi/homepage/getCards?lat=9.91850&lng=76.25580"
-    //   );
-    //   console.log(response);
-
-    //   const data = await response.json();
-    //   setFeedData(data);
-    //   console.log(data);
-    // } catch (err) {
-    //   console.log("error fetching data");
-    // }
-
     fetch("https://www.meesho.com/api/v1/products/filterConfig", {
       method: "POST",
       headers: {

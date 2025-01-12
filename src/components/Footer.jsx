@@ -114,7 +114,7 @@ const Footer = () => {
             E-mail address: query@meesho.com
           </a>
         </p>
-        <small className="block mt-2">© 2015-2024 Meesho.com</small>
+        <small className="block mt-2">© 2015-2025 Meesho.com</small>
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
 import Banner from "./Banner";
 import Footer from "./Footer";
-import NavbarNew from "./NavbarNew";
+import Navbar from "./Navbar";
 import ProductList from "./ProductList";
 
 const Home = () => {
   return (
     <div>
-      <NavbarNew />
+      <Navbar />
       <Banner />
       <div className="flex justify-center items-center space-x-4 p-8">
         <div className="w-72 h-0.5 bg-pink-600"></div>
